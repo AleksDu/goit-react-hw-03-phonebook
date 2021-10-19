@@ -35,7 +35,8 @@ class App extends Component {
 
   // Добавляет контакт
   addContact = (data) => {
-    const normalizedName = data.name.toLowerCase();
+    const normalizedName = data.name;
+    // .toLowerCase();
     const uniqId = Date.now().toString();
 
     // Создает новый контакт с айди из даты
